@@ -1,0 +1,62 @@
+/*head sstyling*/
+header {
+    background-color: #707070;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.logo img {
+    max-height: 50px;
+    margin-left: 10px;
+}
+
+
+
+nav {
+    margin-right: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+}
+
+input#search {
+    color: inherit;
+    padding: 5px 5px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar li a:hover {
+    color: #ffcc00;
+} 
+
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}

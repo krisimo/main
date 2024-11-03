@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d0d0d0;
+    color: #333;
+}
+
+
+
+/* Parallax */
+.parallax {
+    background-image: url('images/mane page photo squoosh.jpg');
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* container design */
+
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto; 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    gap: 20px; 
+    position: center;
+}
+
+/* styling img */
+.jacket-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 370px; 
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* src jacket */
+.jacket-1 {
+    background-image: url('images/1jacketblack.jpg');
+}
+
+.jacket-2 {
+    background-image: url('images/2jacketblackorange.jpg');
+}
+
+.jacket-3 {
+    background-image: url('images/3jacketbluered.jpg');
+}
+.jacket-4 {
+    background-image: url('images/4jacketgreen.jpg');
+}
+
+.jacket-5 {
+    background-image: url('images/5jacketgreenorange.jpg');
+}
+
+.jacket-6 {
+    background-image: url('images/6jacketorangeblue.jpg');
+}
+.jacket-7 {
+    background-image: url('images/7jacketred.jpg');
+}
+
+.jacket-8 {
+    background-image: url('images/8jacketredgreen.jpg');
+}
+
+.jacket-9 {
+    background-image: url('images/9jcaket\ red.blue.jpg');
+}
+
+
+.jacket-item:hover {
+    transform: scale(1.08);
+}
+
+/* text and btn  */
+.text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 0;
+}
+
+.jacket-item:hover .text-container {
+    opacity: 1;
+}
+
+.text-container h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text-container p {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.text-container h2 {
+    font-size: 1em;
+    margin: 10px;
+}
+
+/*functional button*/
+a.button {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: #e03e3e;
+}
+/* Button Styling */
+.cart-button {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #e03e3e;
+}
+
+/* Delivery Info Styling */
+.delivery-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.delivery-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.delivery-info p, .delivery-info ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.delivery-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.delivery-info ul li {
+    margin-bottom: 8px;
+}
+
+
+
+/* Mobile Styling */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack items in a single column on mobile */
+    }
+
+
+    .cart-button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    .cart-button ::before{
+        content: "Add";
+    }
+
+    .delivery-info {
+        padding: 15px;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+}
